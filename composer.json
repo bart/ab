@@ -1,0 +1,24 @@
+{
+    "name": "bart/ab",
+    "description": "A/B testing tool for Laravel apps",
+    "keywords": ["laravel","optimizely","ab","split","testing"],
+    "homepage": "https://github.com/bart/ab",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rene Bartkowiak",
+            "email": "info@rene-bartkowiak.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "^5.0",
+        "namshi/ab": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bart\\Ab\\": "src/"
+        }
+    }
+}
