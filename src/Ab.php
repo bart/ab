@@ -9,6 +9,7 @@ class Ab
 {
     private $tests = [];
     private $default = null;
+    private $forcedVersion = null;
 
     public function __construct()
     {
@@ -25,7 +26,11 @@ class Ab
             return $this->default;
         }
 
-        return $this->tests['tests']->getVariation();
+        return $this->forcedVersion !== null ? $this->forcedVersion : $this->tests['tests']->getVariation();
+    }
+
+    public function setForcedVersion($version) {
+        $this->forcedVersion = $version;
     }
 
     private function getTestsFromConfig() {
