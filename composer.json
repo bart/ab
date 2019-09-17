@@ -20,5 +20,15 @@
         "psr-4": {
             "Bart\\Ab\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bart\\Ab\\ServiceProvider"
+            ],
+            "aliases": [
+                "Bart\\Ab\\Facade"
+            ]
+        }
     }
 }
